@@ -1,0 +1,10 @@
+.container-b{
+  position: absolute;
+  left: 210px;
+  top: 0;
+
+  width: 200px;
+  height: 200px;
+
+  background-color: olivedrab;
+}

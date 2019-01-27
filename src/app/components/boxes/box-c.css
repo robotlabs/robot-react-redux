@@ -1,0 +1,10 @@
+.container-c{
+  position: absolute;
+  left: 420px;
+  top: 0;
+
+  width: 200px;
+  height: 200px;
+
+  background-color: orange;
+}
