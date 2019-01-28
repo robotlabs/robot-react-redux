@@ -1,10 +1,9 @@
 import {createStore, combineReducers} from 'redux';
-import {math, xxx} from './reducers/';
-console.log('math ', math);
+import {countReducers, appStateReducers} from './reducers';
 
 const combinedReducers = combineReducers({
-  'a': math,
-  'b': xxx
+  'countReducers': countReducers,
+  'appStateReducers': appStateReducers
 });
 
 const store = createStore(combinedReducers);

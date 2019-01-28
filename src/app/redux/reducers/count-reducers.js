@@ -1,7 +1,7 @@
 const initialState = {
   count: 13
 };
-export const math = (state = initialState, action) => {
+export const countReducers = (state = initialState, action) => {
   switch(action.type) {
     case 'INCREMENT-ACTION': 
       return {

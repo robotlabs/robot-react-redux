@@ -4,16 +4,15 @@ import {connect} from 'react-redux';
 
 class BoxC extends Component {
   render() {
-    console.log('this.props', this.props);
     return (
-      <BoxContainer>{this.props.count}, {this.props.countxxx}</BoxContainer>
+      <BoxContainer>{this.props.count}, {this.props.state}</BoxContainer>
     )
   }
 }
 function mapStateToProps(state) {
   return {
-    count: state.a.count,
-    countxxx: state.b.countxxx
+    count: state.countReducers.count,
+    state: state.appStateReducers.state
   }
 }
 export default connect(mapStateToProps)(BoxC);

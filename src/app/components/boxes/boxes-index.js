@@ -1,7 +1,5 @@
-import BoxA from './box-a';
-import BoxB from './box-b';
-import BoxC from './box-c';
-import BoxD from './box-d';
-import BoxE from './box-e';
+import BoxA from './box-a/box-a';
+import BoxB from './box-b/box-b';
+import BoxC from './box-c/box-c';
 
-export default {BoxA, BoxB, BoxC, BoxD, BoxE};
+export default {BoxA, BoxB, BoxC};

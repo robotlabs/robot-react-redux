@@ -6,6 +6,10 @@ export const decrementAction = (value) => ({
   type: 'DECREMENT-ACTION',
   valueDecrement: value
 });
-export const xxxAction = (value) => ({
-  type: 'XXX1-ACTION'
+export const messageAction = (message) => ({
+  type: 'CUSTOM-APP-STATE-ACTION',
+  payload: message
+});
+export const randomAppState = () => ({
+  type: 'RANDOM-APP-STATE-ACTION'
 });
