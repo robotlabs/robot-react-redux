@@ -5,7 +5,10 @@ import {connect} from 'react-redux';
 class BoxC extends Component {
   render() {
     return (
-      <BoxContainer>{this.props.count}, {this.props.state}</BoxContainer>
+      <div
+        className='container-c'>
+          Box xC {this.props.count}, {this.props.state}
+      </div>
     )
   }
 }
@@ -16,10 +19,3 @@ function mapStateToProps(state) {
   }
 }
 export default connect(mapStateToProps)(BoxC);
-
-const BoxContainer = (props) => (
-  <div
-    className='container-c'>
-      Box xC {props.children}
-  </div>
-)
